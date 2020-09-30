@@ -27,6 +27,41 @@ nav {
 
 main {
   height: 80vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.left,
+.right {
+  width: 50%;
+  height: 80vh;
+}
+
+.left {
+  background-color: yellow;
+  float: left;
+}
+
+.right {
+  background-color: cyan;
+  float: right;
+  position: relative;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  /* border-radius: 100%; */
 }
 
 footer {
